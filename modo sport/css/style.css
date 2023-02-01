@@ -1,0 +1,349 @@
+/*---------header---------*/
+@font-face {
+    font-family:akiraexpanded;
+    src: url(akira.otf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+h1{
+    color:rgb(255, 152, 35);
+}
+.cabeza{
+    background-color: rgb(255, 150, 12);
+    height: 100px;
+    position:fixed;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+    grid-area: cabeza;
+}
+.cabeza nav h1{
+    font-size: 50px;
+    font-family:akiraexpanded; 
+    font-weight: 500;
+    font-style:initial;
+    text-align: left;
+    margin-top: 20px;
+    margin-left: 30px;
+}
+.cabeza nav h1 a{
+    text-decoration: none;
+    color:white;
+    
+}
+
+.cabeza nav ul{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(131, 131, 131);
+    height: 40px;
+    margin-top: 20px;
+}
+.cabeza nav ul li{
+    list-style-type: none;
+    margin-top: 5px;
+}
+.cabeza nav ul li a{
+    text-decoration: none;
+    font-family:poppins;
+    font-size: 20px;
+    font: weight 50px;
+    color: rgb(255, 255, 255);
+    padding: 5px;
+    top: 70px;
+    margin-inline: 10px;
+    transition: font-size 1s;
+}
+.cabeza nav ul li a:hover{
+    font-size: 25px;
+}
+
+
+/*---------main---------*/
+
+.carrousel{
+    margin-top: 150px;
+    width: 1500px;
+    height: 800px;
+    margin-inline: auto;
+    grid-area: carrousel;
+}
+.d-block{
+    height: 800px; 
+}
+.carousel-caption{
+    font-family: poppins;
+    color: gray;
+    padding-top: 350px;
+    padding-bottom: 350px;
+}
+.carousel-caption h5{
+    font-size: 80px
+}
+.carousel-caption p{
+    font-size: xx-large;
+}
+#imagen2{
+    color: white;
+}
+
+.temporada a{
+    text-decoration: none;
+    color: white;
+    background-color: rgb(255, 150, 12);
+    padding-left: 4px;
+    padding-right: 4px;
+    margin-bottom: 350px;
+}
+.categorias{
+    text-align: center;
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    justify-items: stretch;
+    align-items: stretch;
+    width:auto;
+    grid-area: categorias;
+}
+.categorias div{
+    font-family:akiraexpanded;
+    width: auto;
+    height: 325px;
+    border: 3px solid rgb(180, 180, 180);
+    margin-inline: 30px;
+    margin-top: 50px;
+}
+.categorias div a{
+    text-decoration: none;
+    color:rgb(51, 51, 51);
+    font-size: x-large;
+    padding: 5px;
+    padding-top: 1px;
+    transform: scale(2, 2);
+    transition: font-size 1s;
+}
+.categorias div a:hover{
+    font-size: xx-large;
+}
+.categorias div img{
+    width: auto;
+    height: 320px;
+}
+.destacados h2{
+    color: orange;
+    font-family:akiraexpanded;
+    margin-left: 40px;
+    margin-top: 30px;
+    font-size: 50px;
+}
+.gridProductos{
+    margin-top: 40px;
+    font-family: 'poppins';
+    text-align: center;
+    padding-bottom: 5px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 30px;
+    justify-content: center;
+    justify-items:center ;
+    grid-area: productos;
+}
+.gridItem{
+    border: 2px solid rgb(179, 179, 179);
+    width: 255px;
+    height:410px;
+    margin-top: 110px;
+}
+.gridItem a{
+    text-decoration: none;
+    color:rgb(255, 255, 255);
+    background-color: black;
+    border: 2px solid black;
+    margin-bottom: 5px;
+    margin-top: 1px;
+    height: 100%;
+    transition: font-size 1s;
+}
+.gridItem a:hover{
+    font-size: 20px;
+}
+.gridItem img{
+    width: 240px;
+    height: 300px;
+    padding: 5px 5px 5px 5px;
+}
+h2{
+    color:gray
+}
+.fixed{
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+}
+.fixed img{
+    height: 50px;
+    width: 50px;
+}
+/*-------footer--------*/
+
+footer{
+    margin-top:300px;
+    background-color: rgb(255, 150, 12);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: repeat(2, auto);
+    grid-template-areas: 
+    "cuenta contacto none"
+    "formulario redes mapa";
+    justify-items: center;
+    justify-content: center;
+}
+footer h2{
+    color:rgb(255, 255, 255);
+}
+.contacto{
+    font-family: akiraexpanded;
+    font-size: 30px;
+    grid-area: contacto;
+}
+.redes{
+    grid-area: redes;
+}
+footer div img{
+    height: 50px;
+    width: 50px;
+}
+.cuenta{
+    font-family: akiraexpanded;
+    font-size: 30px;
+    color: white;
+    grid-area: cuenta;
+}
+.formulario{
+    grid-area: formulario;
+}
+footer form div{
+    font-family: 'poppins';
+}
+footer form div .genero{
+    font-family: 'poppins';
+}
+footer iframe{
+    height: 300px;
+    width: 300px;
+}
+.mapa{
+    grid-area: mapa;
+}
+
+/*vista mobile*/
+
+@media screen and (max-width:480px){
+    body{
+        margin: 0;
+        padding: 0;
+        border: 0;
+        box-sizing: border-box;
+    }
+    main{
+        min-height: 100vh;
+        padding-bottom: 800px; 
+        position:relative;  
+    }
+    .gridContainer{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: 
+        "header"
+        "carousel"
+        "categorias"
+        "productos"
+        "footer";
+    }
+.categorias{
+    display: flex;
+    flex-direction: column;
+    box-align: start;
+    width:auto;
+    margin-top: 20px;
+    grid-area: categorias;
+    }
+    .cabeza{
+        height: 200px;
+        grid-area: header;
+    }
+    .cabeza nav h1{
+        text-align: center;
+        font-size: 90px;
+        margin-top: 45px;
+    }
+    .cabeza nav ul{
+        display: none;
+    }
+    .carrousel{
+        width: 1000px;  
+        margin-inline: auto;
+        grid-area: carousel;
+    }
+    .carrousel img{
+        padding-bottom: 50px;
+        height: 900px;
+    }
+    .gridProductos{
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        padding-top: 10px;
+        grid-area: productos;
+    }
+    #pie{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: auto;
+        height: 100%;
+        grid-area: footer;
+    }
+}
+@media screen and (min-width: 481px) and (max-width: 780px) {
+    body{
+        margin: 0;
+        padding: 0;
+    }
+    .gridContainer{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-columns: auto;
+    }
+    .cabeza{
+        height: 150px;
+    }
+    .cabeza nav ul{
+        margin-top: 10px;
+        height: 80px;
+    }
+    .cabeza nav ul li{
+        margin-top: 5px;
+    }
+    .cabeza nav ul li a{
+        font-size: 50px;
+    }
+    .cabeza nav h1{
+        text-align: center;
+        font-size: 100px;
+    }
+    .carrousel{
+        width: 1500px;
+        margin-top: 230px;
+    }
+    .categorias{
+        display: grid;
+        grid-template-columns: repeat 2fr 2fr;
+        justify-items: stretch;
+        width: auto;
+    }
+}
