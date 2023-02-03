@@ -8,18 +8,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
     <title>modo sport
     </title>
 </head>
 
 <body>
-    <div class="gridContainer">
     <header class="cabeza">
         <nav>
             <h1><a href=#home>Modo sport</a></h1>
-            <ul>
+            <ul class="main-menu" id="main-menu">
                 <li><a href="./pages/Newin.html">NEW IN</a></li>
                 <li><a href="./pages/Sale.html">SALE</a></li>
                 <li><a href="./pages/Mujer.html">MUJER</a></li>
@@ -28,6 +28,7 @@
                 <li><a href="#pie">CONTACTO</a></li>
             </ul>
         </nav>
+
     </header>
     <main>
         <section class="carrousel">
@@ -130,6 +131,32 @@
                 </div>
             </div>
         </section>
+        <section class="locales">
+            <h2>Locales</h2>
+            <div class="storesGrid">
+                <div id="localUno" class="storesItem">
+                    <h3>Ramos Mejia</h3>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!4v1675361276320!6m8!1m7!1slHSOkP5MYQVpWsgvv61FLg!2m2!1d-34.64606487837479!2d-58.55882886389648!3f10.463692!4f0!5f0.7820865974627469"
+                        width="500" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div id="parrafoUno" class="storesP">
+                    <p>Vení a visitarnos en nuestro local y encontrá lo que necesitás. Nos encontramos en Pizzurno 30.
+                        Horarios: Lunes a sábados
+                        10:30hs a 13hs -
+                        15:30hs a 20hs</p>
+                </div>
+                <div id="localDos" class="storesItem">
+                    <h3 class="tituloDos">Proximamente</h3>
+                    <img src="./img/incognito.png" alt="próximamente">
+                </div>
+                <div id="parrafoDos" class="storesP">
+                    <p>¡Queremos expandirnos y que más personas se pongan en #modosport con nuestro nuevo local! ¿Podés
+                        adivinar dónde es?</p>
+                </div>
+            </div>
+        </section>
 
     </main>
     <div class="fixed">
@@ -141,11 +168,12 @@
         <div class="redes">
             <h2 class="contacto">Vias de contacto</h2>
             <div>
-                <a href="https://www.instagram.com/modosport_mf/" target="_blank"><img src="./img/logotipo-de-instagram.png"
-                    alt="Logo Instagram"></a>
+                <a href="https://www.instagram.com/modosport_mf/" target="_blank"><img
+                        src="./img/logotipo-de-instagram.png" alt="Logo Instagram"></a>
                 <a href="https://api.whatsapp.com/send?phone=541164504311&text=Hola%2C+llegu%C3%A9+a+este+whatsapp+por+medio+de+un+link+del+sitio+web+de+Modo+Sport!"
-                target="_blank"><img src="./img/whatsapp.png" alt="Logo WhatsApp"></a>
-                <a href="mailto:modosport.ar@gmail.com" target="_blank"><img src="./img/email.png" alt="Logo G-Mail"></a>
+                    target="_blank"><img src="./img/whatsapp.png" alt="Logo WhatsApp"></a>
+                <a href="mailto:modosport.ar@gmail.com" target="_blank"><img src="./img/email.png"
+                        alt="Logo G-Mail"></a>
             </div>
         </div>
         <h1 class="cuenta">Crea tu cuenta</h1>
@@ -188,16 +216,17 @@
                     <input type="submit" value="Enviar formulario">
                     <input type="reset" value="Limpiar formulario">
                 </div>
-            </div>
+        </div>
         </form>
         <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.3493022038683!2d-58.56109584858586!3d-34.6458804671424!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc7e0df6f3e81%3A0x8e8effdcdb00fff7!2sProf.%20Juan%20Pizzurno%2030%2C%20B1704EXB%20Ramos%20Mej%C3%ADa%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1671587953266!5m2!1ses!2sar"
             width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
             referrerpolicy="no-referrer-when-downgrade" class="mapa"></iframe>"
     </footer>
-    </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    
+    <script src="./js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
