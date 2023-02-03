@@ -10,7 +10,7 @@
     box-sizing: border-box;
 }
 body{
-    width: 1600px;
+    width: auto;
 }
 h1{
     color:rgb(255, 152, 35);
@@ -167,8 +167,11 @@ h1{
     border-radius: 5px;
     width: 255px;
     height:410px;
-    margin-top: 110px;
+    margin-top: 10px;
     transition: box-shadow 1s;
+}
+#pageProduct{
+    margin-top: 110px;
 }
 .gridItem:hover{
     box-shadow: 1px 2px 14px 2px gray;
@@ -397,10 +400,14 @@ footer iframe{
     .gridProductos{
         display: grid;
         grid-template-columns: repeat(2, 50%);
-        justify-content: center;
+        width: 1232px;
+        justify-content: space-around;
         column-gap: 0;
-        row-gap: 0;
+        row-gap: 10px;
         padding-top: 10px;
+    }
+    #pageProduct{
+        margin-top: 200px;
     }
     .gridItem{
         width: 400px;
@@ -424,7 +431,7 @@ footer iframe{
     }
     .fixed img{
         height: 160px;
-        width: 160px;
+        width: 100px;
     }
     .storesGrid{
         margin-bottom: 1800px;
