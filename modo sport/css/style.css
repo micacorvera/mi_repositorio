@@ -17,8 +17,8 @@ h1{
 }
 
 .cabeza{
-    background-color: rgb(255, 150, 12);
-    height: 100px;
+    background-color: #ff960c;
+    height: 110px;
     position:fixed;
     top: 0;
     width: 100%;
@@ -31,22 +31,20 @@ h1{
     font-weight: 500;
     font-style:initial;
     text-align: left;
+    margin-bottom: 30px;
+    margin-left: 20px;
     margin-top: 20px;
-    margin-left: 30px;
 }
 .cabeza nav h1 a{
     text-decoration: none;
     color:white;
-    
 }
-
 .cabeza nav ul{
     width: 100%;
     display: flex;
     justify-content: center;
     background-color: rgb(131, 131, 131);
     height: 40px;
-    margin-top: 20px;
 }
 .cabeza nav ul li{
     list-style-type: none;
@@ -95,14 +93,6 @@ h1{
     color: white;
 }
 
-.temporada a{
-    text-decoration: none;
-    color: white;
-    background-color: rgb(255, 150, 12);
-    padding-left: 4px;
-    padding-right: 4px;
-    margin-bottom: 350px;
-}
 .categorias{
     text-align: center;
     display: grid;
@@ -194,9 +184,6 @@ h1{
     width: 240px;
     height: 300px;
     padding: 5px 5px 5px 5px;
-}
-h2{
-    color:gray
 }
 .fixed{
     position: fixed;
@@ -483,6 +470,9 @@ footer iframe{
     body{
         margin: 0;
         padding: 0;
+        border: 0;
+        width: fit-content;
+        box-sizing: border-box;
     }
     .cabeza{
         height: 150px;
@@ -502,7 +492,7 @@ footer iframe{
         font-size: 80px;
     }
     .carrousel{
-        width: auto;
+        width: fit-content;
         margin-top: 230px;
     }
     .carrousel img{
@@ -522,5 +512,10 @@ footer iframe{
         justify-content: stretch;
         padding-top: 30px;
         width: auto;
+    }
+}
+@media screen and (min-width: 1100px) and (max-width:1400px) {
+    .carrousel { 
+    width: auto;
     }
 }

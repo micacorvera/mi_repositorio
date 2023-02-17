@@ -1,0 +1,54 @@
+/*-----header-----*/
+
+.cabeza {
+    background-color: $color-primario;
+    height: 100px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+    grid-area: cabeza;
+
+    nav {
+        h1 {
+            font-size: 50px;
+            font-family: akiraexpanded;
+            font-weight: 500;
+            font-style: initial;
+            text-align: left;
+            margin-bottom: 30px;
+            margin-left: 20px;
+            margin-top: 20px;
+        }
+        a {
+            text-decoration: none;
+            color: $color-cuarto;
+        }
+    }
+    ul {
+        width: 100%;
+        @include flex(flex, center);
+        background-color: $color-secundario;
+        height: 40px;
+        li {
+            list-style-type: none;
+            margin-top: 5px;
+
+            a {
+                text-decoration: none;
+                font-family: poppins;
+                font-size: 20px;
+                font: weight 50px;
+                color: $color-cuarto;
+                padding: 5px;
+                top: 70px;
+                margin-inline: 10px;
+                transition: font-size 1s;
+
+                &:hover {
+                    font-size: 25px
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,31 @@
+@font-face {
+    font-family: akiraexpanded;
+    src: url(akira.otf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: auto;
+}
+
+h1 {
+    color: orange;
+}
+
+.fixed {
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    a {
+        img {
+            height: 50px;
+            width: 50px;
+        }
+    }
+}

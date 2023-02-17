@@ -1,0 +1,64 @@
+/*--------productos---------*/
+.destacados {
+    h2 {
+        color: $color-primario;
+        font-family: akiraexpanded;
+        margin-left: 40px;
+        margin-top: 30px;
+        font-size: 50px;
+    }
+
+    .gridProductos {
+        margin-top: 40px;
+        font-family: 'poppins';
+        text-align: center;
+        padding-bottom: 5px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-column-gap: 20px;
+        grid-row-gap: 30px;
+        justify-content: center;
+        justify-items: center;
+        grid-area: productos;
+
+        .gridItem {
+            border: 2px solid  ;
+            border-radius: 5px;
+            width: 255px;
+            height: 410px;
+            margin-top: 10px;
+            transition: box-shadow 1s;
+
+            &:hover {
+                box-shadow: 1px 2px 14px 2px $color-terciario;
+            }
+
+            #pageProduct {
+                margin-top: 110px;
+            }
+
+            img {
+                width: 240px;
+                height: 300px;
+                padding: 5px 5px 5px 5px;
+            }
+
+            h3 {}
+
+            a {
+                text-decoration: none;
+                color: map-get($boton, color-texto);
+                background-color: map-get($boton, bg-boton);
+                border: map-get($boton, border-boton );
+                margin-bottom: 5px;
+                margin-top: 1px;
+                height: 100%;
+                border-radius: 4px;
+                transition: font-size 1s;
+                &:hover{
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,81 @@
+/*------locales-------*/
+.locales {
+    h2 {
+        font-family: akiraexpanded;
+        color: $color-primario;
+        margin-left: 40px;
+        margin-top: 30px;
+        font-size: nth($font-size, 4)
+    }
+
+    div {
+        height: 475px;
+        width: auto;
+
+        .storesGrid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-columns: repeat(2, auto);
+            grid-template-areas:
+                "localUno parrafoUno parrafoUno"
+                "parrafoDos parrafoDos localDos";
+            margin-left: 40px;
+            margin-right: 40px;
+            justify-content: center;
+            position: relative;
+            padding-top: 20px;
+            margin-bottom: 600px;
+            row-gap: 30px;
+            column-gap: 30px;
+            width: auto;
+
+            .storesItem {
+                border: 3px solid rgb(182, 182, 182);
+                border-radius: 5px;
+                @extend %padding;
+
+                h3 {
+                    font-family: akiraexpanded;
+                    color: rgb(46, 46, 46);
+                    font-size: nth($font-size, 3);
+                    font-weight: bold;
+                }
+
+                img {
+                    width: 500px;
+                    height: 400px;
+                }
+            }
+
+            .storesP {
+                font-family: poppins;
+                font-size: 20px;
+            }
+
+            #localUno {
+                grid-area: localUno;
+            }
+
+            #parrafoUno {
+                grid-area: parrafoUno;
+                text-align: start;
+                display: flex;
+                align-items: center;
+            }
+
+            #localDos {
+                grid-area: localDos;
+                .tituloDos{
+                    text-align: end;
+                }
+            }
+
+            #parrafoDos {
+                grid-area: parrafoDos;
+                text-align: start;
+                display: flex;
+                align-items: center;
+            }
+        }
+    }
+}

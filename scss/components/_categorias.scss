@@ -1,0 +1,44 @@
+/*------categorias------*/
+.categorias {
+    text-align: center;
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    justify-items: stretch;
+    align-items: stretch;
+    width: auto;
+    grid-area: categorias;
+
+    div {
+        font-family: akiraexpanded;
+        width: auto;
+        height: 325px;
+        border: 3px solid rgb(180, 180, 180);
+        margin-inline: 30px;
+        margin-top: 50px;
+        border-radius: 5px;
+        transition: box-shadow 1s;
+
+        &:hover {
+            box-shadow: 1px 2px 14px 2px $color-terciario;
+        }
+
+        a {
+            text-decoration: none;
+            color: nth($colores, 6);
+            font-size: nth($font-size, 5);
+            padding: 5px;
+            padding-top: 1px;
+            transform: scale(2, 2);
+            transition: font-size 1s;
+
+            &:hover {
+                font-size: nth($font-size, 6);
+            }
+        }
+
+        img {
+            width: auto;
+            height: 320px;
+        }
+    }
+}

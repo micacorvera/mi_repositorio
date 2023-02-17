@@ -1,0 +1,47 @@
+//*variables
+
+$color-primario: rgb(255, 150, 12);
+$color-secundario: rgb(131, 131, 131);
+$color-terciario: gray;
+$color-cuarto: white;
+
+//* listas 
+$colores:
+rgb(255, 150, 12),
+white,
+#838383,
+#b4b4b4,
+gray,
+#333333,
+#b6b6b6,
+#b3b3b3,
+#2e2e2e; 
+
+$font-size:
+20px,
+25px,
+30px,
+50px,
+x-large,
+xx-large;
+
+//*mapas
+
+$boton:(
+    bg-boton: rgb(0, 0, 0),
+    border-boton: 2px solid rgb(32, 32, 32),
+    color-texto: rgb(255, 255, 255),
+);
+
+//*extends
+
+%padding{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+//*mixins
+@mixin flex ($flex, $justify){
+    display: $flex;
+    justify-content: $justify;
+}
