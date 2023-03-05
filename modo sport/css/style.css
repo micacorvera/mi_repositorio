@@ -316,8 +316,8 @@ footer iframe{
 }
 
 /*vista mobile*/
-
-@media screen and (max-width:480px){
+@media screen and (min-width: 305px) and (max-width: 480px) {
+    
     body{
         margin: 0;
         padding: 0;
@@ -422,9 +422,24 @@ footer iframe{
     }
     .storesGrid{
         margin-bottom: 1800px;
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        justify-content: center;
+        margin-top: 450px;
     }
     .storesP{
         font-size: 40px;
+    }
+    .storesItem{
+        height: 1152px;
+        padding-bottom: 10px;
+    }
+    #localUno iframe{
+    width: 1000px;
+    }
+    #localDos img{
+        width: 1000px;
     }
     #pie{
         position: absolute;
