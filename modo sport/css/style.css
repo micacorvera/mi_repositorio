@@ -15,7 +15,12 @@ body{
 h1{
     color:rgb(255, 152, 35);
 }
-
+.abrirMenu{
+    display: none;
+}
+.cerrarMenu{
+    display: none;
+}
 .cabeza{
     background-color: #ff960c;
     height: 110px;
@@ -315,7 +320,7 @@ footer iframe{
     grid-area: mapa;
 }
 
-/*vista mobile*/
+/*-----vista mobile-------*/
 @media screen and (min-width: 305px) and (max-width: 480px) {
     
     body{
@@ -330,27 +335,78 @@ footer iframe{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: auto 1fr auto;
+        width: auto;
     }
     main{
         min-height: 100vh;
         margin-bottom: 1000px;
     }
+    .abrirMenu{
+        display: block;
+        height: 160px;
+        width: 160px;
+        margin-top: 15px;
+        cursor: pointer;
+    }
+    .abrirMenu img{
+        height: 160px;
+        width: 160px;
+        background-color: rgb(255, 150, 12);
+    }
+    .cerrarMenu{
+        display: block;
+        height: max-content;
+        width: max-content;
+        margin-top: 30px;
+        background-color: gray;
+        cursor: pointer;
+    }
+    .cerrarMenu img{
+        height: 130px;
+        width: 160px;
+    }
     .cabeza{
         height: 200px;
         z-index: 2;
+    }
+    .cabeza nav{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: start;
     }
     .cabeza nav h1{
         text-align: center;
         font-size: 90px;
         margin-top: 45px;
-    }
+        padding-left: 30px;
+    } 
     .cabeza nav ul{
-        flex-direction: row;
-        align-items: center;
         height: fit-content;
+        /* display: none;*/
+        position: absolute;
+        flex-direction: column;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        width: 50%;
+        top: 0px;
+        bottom: 0;
+        height: 4000px;
+        box-shadow: 0 0 0 100vmax rgba(58, 58, 58, 0.5);
+
+        opacity: 0;
+        visibility: hidden;
+    }
+    .cabeza nav ul.visible{
+        opacity: 1;
+        visibility:visible;
+    }
+    .cabeza nav ul li{
+        margin-top: 30px;
     }
     .cabeza nav ul li a{
-        font-size: 40px;
+        font-size: 60px;
+        top: 30px;
     }
     .carrousel{
         width: auto;  
@@ -418,28 +474,18 @@ footer iframe{
     }
     .fixed img{
         height: 160px;
-        width: 100px;
+        width: 160px;
     }
     .storesGrid{
-        margin-bottom: 1800px;
         display: flex;
         flex-direction: column;
         justify-items: center;
         justify-content: center;
         margin-top: 450px;
+        margin-bottom: 2000px;
     }
     .storesP{
         font-size: 40px;
-    }
-    .storesItem{
-        height: 1152px;
-        padding-bottom: 10px;
-    }
-    #localUno iframe{
-    width: 1000px;
-    }
-    #localDos img{
-        width: 1000px;
     }
     #pie{
         position: absolute;
@@ -449,7 +495,8 @@ footer iframe{
         flex-direction: column;
         align-self: flex-end;
         height: 2100px;
-        padding-bottom:0;
+        margin-bottom: 0;
+        padding-bottom: 0;
         margin-top: 100px;
     }
     .contacto{
@@ -466,18 +513,20 @@ footer iframe{
     .cuenta{
         font-size: 60px;
         text-align: center;
-        padding-bottom: 100px;
+        padding-bottom: 10px;
     }
     .formulario{
         margin-inline: auto;
-        scale: 200%;
+        scale: 400%;
         padding-top: 250px;
-        padding-bottom: 350px;
+        padding-bottom: 20px;
+        margin-bottom: 400px;
     }
     .mapa{
-        scale: 200%;
+        padding-top: 30px;
+        scale: 400%;
         margin-inline: auto;
-        bottom: 0;
+        margin-bottom: 0;
     }
     }
 
